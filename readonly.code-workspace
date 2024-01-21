@@ -2,8 +2,12 @@
   "folders": [
     {
       "name": "Root",
-      "path": "."
-    }
+      "path": ".",
+    },
+    {
+      "name": "Site",
+      "path": "packages/site",
+    },
   ],
   "settings": {
     "editor.formatOnSave": true,
@@ -12,7 +16,7 @@
     "less.validate": false,
     "scss.validate": false,
     "stylelint.enable": true,
-    "stylelint.validate": ["css", "less", "postcss", "scss", "sass"]
+    "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
   },
   "extensions": {
     "recommendations": [
@@ -20,7 +24,7 @@
       "esbenp.prettier-vscode",
       "mikestead.dotenv",
       "stylelint.vscode-stylelint",
-      "juanblanco.solidity"
-    ]
-  }
+      "juanblanco.solidity",
+    ],
+  },
 }
