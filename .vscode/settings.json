@@ -4,6 +4,10 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "stylelint.enable": true,
-  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"]
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

@@ -3,7 +3,6 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "mikestead.dotenv",
-    "stylelint.vscode-stylelint",
-    "juanblanco.solidity"
+    "bradlc.vscode-tailwindcss"
   ]
 }
