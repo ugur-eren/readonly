@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {KeyringSnapRpcClient} from '@metamask/keyring-api';
+import {AccountCard} from './AccountCard';
 import {Button, Input} from '../../components';
 import {useMetamask, useSnapAccounts, useSnapState} from '../../hooks';
 import {SNAP_ORIGIN} from '../../utils/Env';
@@ -69,6 +70,7 @@ export const Landing: React.FC = () => {
               placeholder="Enter the address"
               className="min-w-96"
             />
+
             <Button onClick={addAccount}>Add</Button>
           </div>
 
@@ -77,18 +79,7 @@ export const Landing: React.FC = () => {
               <h1 className="mb-2 text-xl">Your Accounts</h1>
 
               {Object.values(snapAccounts).map((account) => (
-                <div className="relative grid gap-1 p-2">
-                  <a
-                    href={`https://blockscan.com/address/${account.address}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center rounded-lg bg-neutral-900 p-2 transition duration-150 ease-in-out hover:bg-neutral-950 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
-                  >
-                    <div className="ml-4">
-                      <p className="text-sm font-medium text-white">{account.address}</p>
-                    </div>
-                  </a>
-                </div>
+                <AccountCard account={account} />
               ))}
             </div>
           </div>
