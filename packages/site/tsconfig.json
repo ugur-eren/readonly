@@ -5,8 +5,8 @@
     "target": "es5",
     "module": "ESNext",
     "incremental": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
   },
   "include": ["src", "src/vite-env.d.ts"],
-  "references": [{"path": "./tsconfig.node.json"}]
+  "references": [{"path": "./tsconfig.node.json"}],
 }

@@ -1,0 +1,29 @@
+{
+  "version": "0.0.7",
+  "description": "snAAps Account Abstraction keyring snap",
+  "proposedName": "snAAps",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ugur-eren/readonly.git"
+  },
+  "source": {
+    "shasum": "FSbg9cydwyWhdiW+HL1IHs73A/3aMUsKc1ZpfP/WiG8=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "@snaaps/snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:keyring": {
+      "allowedOrigins": ["https://readonly.online", "http://localhost:3000"]
+    }, 
+    "snap_manageAccounts": {},
+    "snap_manageState": {},
+    "snap_getEntropy": {}
+  },
+  "manifestVersion": "0.1"
+}

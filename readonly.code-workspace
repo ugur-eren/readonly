@@ -8,6 +8,10 @@
       "name": "Site",
       "path": "packages/site",
     },
+    {
+      "name": "Snap",
+      "path": "packages/snap",
+    },
   ],
   "settings": {
     "editor.formatOnSave": true,

@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/", "snap.config.ts"]
+}
