@@ -1,6 +1,6 @@
 {
   "name": "readonly-snap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ReadOnly Account Snap for MetaMask",
   "keywords": [
     "metamask",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/ugur-eren/readonly.git"
   },
-  "license": "CC BY-NC-ND 4.0 Deed (see in LICENSE.md)",
+  "license": "The Unlicense (see in LICENSE)",
   "main": "dist/bundle.js",
   "files": [
     "dist/",
