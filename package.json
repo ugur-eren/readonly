@@ -54,5 +54,8 @@
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false
     }
+  },
+  "dependencies": {
+    "@metamask/providers": "^14.0.2"
   }
 }
