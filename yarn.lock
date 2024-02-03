@@ -1999,18 +1999,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/approval-controller@npm:^5.1.1":
-  version: 5.1.2
-  resolution: "@metamask/approval-controller@npm:5.1.2"
-  dependencies:
-    "@metamask/base-controller": ^4.1.1
-    "@metamask/rpc-errors": ^6.1.0
-    "@metamask/utils": ^8.3.0
-    nanoid: ^3.1.31
-  checksum: 842987043ebc4a694fee8fe31568e4400c009285f271a0d36c15e370942f026559ffd0ac0147567976260aa2f7f2d66278c850103b8001c269e290e44ccba8d7
-  languageName: node
-  linkType: hard
-
 "@metamask/auto-changelog@npm:^3.3.0":
   version: 3.4.4
   resolution: "@metamask/auto-changelog@npm:3.4.4"
@@ -2036,7 +2024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/base-controller@npm:^4.0.0, @metamask/base-controller@npm:^4.0.1, @metamask/base-controller@npm:^4.1.0, @metamask/base-controller@npm:^4.1.1":
+"@metamask/base-controller@npm:^4.0.1, @metamask/base-controller@npm:^4.1.0":
   version: 4.1.1
   resolution: "@metamask/base-controller@npm:4.1.1"
   dependencies:
@@ -2061,7 +2049,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/controller-utils@npm:^8.0.1, @metamask/controller-utils@npm:^8.0.2":
+"@metamask/controller-utils@npm:^8.0.1":
   version: 8.0.2
   resolution: "@metamask/controller-utils@npm:8.0.2"
   dependencies:
@@ -2155,22 +2143,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/keyring-api@npm:^1.0.0-rc.1":
-  version: 1.1.0
-  resolution: "@metamask/keyring-api@npm:1.1.0"
-  dependencies:
-    "@metamask/providers": ^13.0.0
-    "@metamask/snaps-controllers": ^3.1.0
-    "@metamask/snaps-rpc-methods": ^3.1.0
-    "@metamask/snaps-utils": ^3.0.0
-    "@metamask/utils": ^8.1.0
-    "@types/uuid": ^9.0.1
-    superstruct: ^1.0.3
-    uuid: ^9.0.0
-  checksum: dd07db768861a4c4b9b5168dedac104c7e9a8fdd1de5520f81bf276f9923ea55f649d57e8eee1aa5dda06b6b82f163ec5447e32c614e920063baea06e130ecea
-  languageName: node
-  linkType: hard
-
 "@metamask/keyring-api@npm:^3.0.0":
   version: 3.0.0
   resolution: "@metamask/keyring-api@npm:3.0.0"
@@ -2226,7 +2198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/permission-controller@npm:^7.0.0, @metamask/permission-controller@npm:^7.1.0":
+"@metamask/permission-controller@npm:^7.1.0":
   version: 7.1.0
   resolution: "@metamask/permission-controller@npm:7.1.0"
   dependencies:
@@ -2242,29 +2214,6 @@ __metadata:
   peerDependencies:
     "@metamask/approval-controller": ^5.1.1
   checksum: 889213cca32cbf5b32b7e71c70ded0aeea32eae169ec67fb0d0bc8dcaa183b222f9d5417f657e331d7fb21ecb71f250cf1c932110d4b1e2167972b30bd012098
-  languageName: node
-  linkType: hard
-
-"@metamask/phishing-controller@npm:^8.0.1":
-  version: 8.0.2
-  resolution: "@metamask/phishing-controller@npm:8.0.2"
-  dependencies:
-    "@metamask/base-controller": ^4.1.1
-    "@metamask/controller-utils": ^8.0.2
-    "@types/punycode": ^2.1.0
-    eth-phishing-detect: ^1.2.0
-    punycode: ^2.1.1
-  checksum: 2263f8c696ae81b233cc21ad927515c24e32132ddb297ab04ca45a8d92bbd0e8b0d7b43d53a074277cc441d51ce95d03efccecac0c7da9493540d489f4aecb81
-  languageName: node
-  linkType: hard
-
-"@metamask/post-message-stream@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@metamask/post-message-stream@npm:7.0.0"
-  dependencies:
-    "@metamask/utils": ^5.0.0
-    readable-stream: 3.6.2
-  checksum: a922874f00870e0c666216e592dff6c508e926fae122646d2792c9a7fac4f73323c65046a1eb9dc48a4b0e7de3bbcf753f5ad470688ed4ba2298b4d3a9b39c7d
   languageName: node
   linkType: hard
 
@@ -2407,42 +2356,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-controllers@npm:^3.1.0":
-  version: 3.6.0
-  resolution: "@metamask/snaps-controllers@npm:3.6.0"
-  dependencies:
-    "@metamask/approval-controller": ^5.1.1
-    "@metamask/base-controller": ^4.0.0
-    "@metamask/json-rpc-engine": ^7.3.1
-    "@metamask/object-multiplex": ^2.0.0
-    "@metamask/permission-controller": ^7.0.0
-    "@metamask/phishing-controller": ^8.0.1
-    "@metamask/post-message-stream": ^7.0.0
-    "@metamask/rpc-errors": ^6.1.0
-    "@metamask/snaps-registry": ^3.0.0
-    "@metamask/snaps-rpc-methods": ^4.1.0
-    "@metamask/snaps-sdk": ^1.3.1
-    "@metamask/snaps-utils": ^5.1.1
-    "@metamask/utils": ^8.2.1
-    "@xstate/fsm": ^2.0.0
-    browserify-zlib: ^0.2.0
-    concat-stream: ^2.0.0
-    get-npm-tarball-url: ^2.0.3
-    immer: ^9.0.6
-    json-rpc-middleware-stream: ^5.0.0
-    nanoid: ^3.1.31
-    readable-stream: ^3.6.2
-    readable-web-to-node-stream: ^3.0.2
-    tar-stream: ^3.1.6
-  peerDependencies:
-    "@metamask/snaps-execution-environments": ^3.4.3
-  peerDependenciesMeta:
-    "@metamask/snaps-execution-environments":
-      optional: true
-  checksum: 5eddb49976ccb6d0d734f009d624ab646aad1f79a2124364edc9ec72f3a4bc96d66eae219022047f35d170cad7775391c0737bcc93f0e9a153046be26bfc864b
-  languageName: node
-  linkType: hard
-
 "@metamask/snaps-registry@npm:^2.1.0":
   version: 2.1.1
   resolution: "@metamask/snaps-registry@npm:2.1.1"
@@ -2466,7 +2379,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-rpc-methods@npm:^3.1.0, @metamask/snaps-rpc-methods@npm:^3.3.0":
+"@metamask/snaps-rpc-methods@npm:^3.3.0":
   version: 3.3.0
   resolution: "@metamask/snaps-rpc-methods@npm:3.3.0"
   dependencies:
@@ -2482,23 +2395,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-rpc-methods@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@metamask/snaps-rpc-methods@npm:4.1.0"
-  dependencies:
-    "@metamask/key-tree": ^9.0.0
-    "@metamask/permission-controller": ^7.0.0
-    "@metamask/rpc-errors": ^6.1.0
-    "@metamask/snaps-sdk": ^1.3.1
-    "@metamask/snaps-utils": ^5.1.1
-    "@metamask/utils": ^8.2.1
-    "@noble/hashes": ^1.3.1
-    superstruct: ^1.0.3
-  checksum: c782ba0e2dd0d9a81e2e8e1c1eb56918972f3acde8699954f422cc545a1f84a7aac8b314c1068ec71646c81dacdc65278e3c6780ad14d6be3aae8011b2d12fe5
-  languageName: node
-  linkType: hard
-
-"@metamask/snaps-sdk@npm:^1.2.0, @metamask/snaps-sdk@npm:^1.3.1, @metamask/snaps-sdk@npm:^1.3.2, @metamask/snaps-sdk@npm:^1.4.0":
+"@metamask/snaps-sdk@npm:^1.2.0, @metamask/snaps-sdk@npm:^1.3.2, @metamask/snaps-sdk@npm:^1.4.0":
   version: 1.4.0
   resolution: "@metamask/snaps-sdk@npm:1.4.0"
   dependencies:
@@ -2535,7 +2432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-utils@npm:^3.0.0, @metamask/snaps-utils@npm:^3.3.0":
+"@metamask/snaps-utils@npm:^3.3.0":
   version: 3.3.0
   resolution: "@metamask/snaps-utils@npm:3.3.0"
   dependencies:
@@ -2564,7 +2461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-utils@npm:^5.0.0, @metamask/snaps-utils@npm:^5.1.1":
+"@metamask/snaps-utils@npm:^5.0.0":
   version: 5.2.0
   resolution: "@metamask/snaps-utils@npm:5.2.0"
   dependencies:
@@ -2603,19 +2500,6 @@ __metadata:
     "@metamask/utils": ^8.2.1
     webpack-sources: ^3.2.3
   checksum: b18fd2fe1a0ec68b8ef529f5a57d88bf7a54ca108861ccce901cec562b0431e798beace18899b0112443ac6aef4b83a291f4ca013040944b10e3b2c374521324
-  languageName: node
-  linkType: hard
-
-"@metamask/utils@npm:^5.0.0":
-  version: 5.0.2
-  resolution: "@metamask/utils@npm:5.0.2"
-  dependencies:
-    "@ethereumjs/tx": ^4.1.2
-    "@types/debug": ^4.1.7
-    debug: ^4.3.4
-    semver: ^7.3.8
-    superstruct: ^1.0.3
-  checksum: eca82e42911b2840deb4f32f0f215c5ffd14d22d68afbbe92d3180e920e509e310777b15eab29def3448f3535b66596ceb4c23666ec846adacc8e1bb093ff882
   languageName: node
   linkType: hard
 
@@ -3295,13 +3179,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/punycode@npm:^2.1.0":
-  version: 2.1.3
-  resolution: "@types/punycode@npm:2.1.3"
-  checksum: e51954e9123a3f076326055e5e9e7732346672bf381a68bdb99c6c854dac8918338e444b51d9397fd0018dab53f7af6c7d1ea1dea4d55f8647360f1d8b73f274
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:<18.0.0":
   version: 17.0.25
   resolution: "@types/react-dom@npm:17.0.25"
@@ -3752,13 +3629,6 @@ __metadata:
     "@webassemblyjs/ast": 1.11.6
     "@xtuc/long": 4.2.2
   checksum: d2fa6a4c427325ec81463e9c809aa6572af6d47f619f3091bf4c4a6fc34f1da3df7caddaac50b8e7a457f8784c62cd58c6311b6cb69b0162ccd8d4c072f79cf8
-  languageName: node
-  linkType: hard
-
-"@xstate/fsm@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "@xstate/fsm@npm:2.1.0"
-  checksum: 593aa73866d89472f15727872f41cf305388f9b1a34e26e22bff0a062e4dedc8d8615a2c805d76114dc418a635ea0ccfc1d17dd44774e6b7ec1c6fb4a6d1723f
   languageName: node
   linkType: hard
 
@@ -4256,13 +4126,6 @@ __metadata:
   dependencies:
     dequal: ^2.0.3
   checksum: a94047e702b57c91680e6a952ec4a1aaa2cfd0d80ead76bc8c954202980d8c51968a6ea18b4d8010e8e2cf95676533d8022a8ebba9abc1dfe25686721df26fd2
-  languageName: node
-  linkType: hard
-
-"b4a@npm:^1.6.4":
-  version: 1.6.4
-  resolution: "b4a@npm:1.6.4"
-  checksum: 81b086f9af1f8845fbef4476307236bda3d660c158c201db976f19cdce05f41f93110ab6b12fd7a2696602a490cc43d5410ee36a56d6eef93afb0d6ca69ac3b2
   languageName: node
   linkType: hard
 
@@ -5117,18 +4980,6 @@ __metadata:
     readable-stream: ^2.2.2
     typedarray: ^0.0.6
   checksum: 1ef77032cb4459dcd5187bd710d6fc962b067b64ec6a505810de3d2b8cc0605638551b42f8ec91edf6fcd26141b32ef19ad749239b58fae3aba99187adc32285
-  languageName: node
-  linkType: hard
-
-"concat-stream@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "concat-stream@npm:2.0.0"
-  dependencies:
-    buffer-from: ^1.0.0
-    inherits: ^2.0.3
-    readable-stream: ^3.0.2
-    typedarray: ^0.0.6
-  checksum: d7f75d48f0ecd356c1545d87e22f57b488172811b1181d96021c7c4b14ab8855f5313280263dca44bb06e5222f274d047da3e290a38841ef87b59719bde967c7
   languageName: node
   linkType: hard
 
@@ -6419,15 +6270,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eth-phishing-detect@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "eth-phishing-detect@npm:1.2.0"
-  dependencies:
-    fast-levenshtein: ^2.0.6
-  checksum: 66a6a7c249ec8494e0360663596ce980ca75747cd202c47732eca0bfc7a97c6debbae359842e4f3e4ac7e6c44ab1f7f091c3aa7baa330449d3c1b7cc58608b71
-  languageName: node
-  linkType: hard
-
 "eth-rpc-errors@npm:^4.0.2":
   version: 4.0.3
   resolution: "eth-rpc-errors@npm:4.0.3"
@@ -6596,13 +6438,6 @@ __metadata:
   version: 1.3.0
   resolution: "fast-diff@npm:1.3.0"
   checksum: d22d371b994fdc8cce9ff510d7b8dc4da70ac327bcba20df607dd5b9cae9f908f4d1028f5fe467650f058d1e7270235ae0b8230809a262b4df587a3b3aa216c3
-  languageName: node
-  linkType: hard
-
-"fast-fifo@npm:^1.1.0, fast-fifo@npm:^1.2.0":
-  version: 1.3.2
-  resolution: "fast-fifo@npm:1.3.2"
-  checksum: 6bfcba3e4df5af7be3332703b69a7898a8ed7020837ec4395bb341bd96cc3a6d86c3f6071dd98da289618cf2234c70d84b2a6f09a33dd6f988b1ff60d8e54275
   languageName: node
   linkType: hard
 
@@ -6878,13 +6713,6 @@ __metadata:
     has-symbols: ^1.0.3
     hasown: ^2.0.0
   checksum: 447ff0724df26829908dc033b62732359596fcf66027bc131ab37984afb33842d9cd458fd6cecadfe7eac22fd8a54b349799ed334cf2726025c921c7250e7417
-  languageName: node
-  linkType: hard
-
-"get-npm-tarball-url@npm:^2.0.3":
-  version: 2.1.0
-  resolution: "get-npm-tarball-url@npm:2.1.0"
-  checksum: 02b96993ad5a04cbd0ef0577ac3cc9e2e78a7c60db6bb5e6c8fe78950fc1fc3d093314987629a2fda3083228d91a93670bde321767ca2cf89ce7f463c9e44071
   languageName: node
   linkType: hard
 
@@ -8039,7 +7867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-rpc-middleware-stream@npm:^5.0.0, json-rpc-middleware-stream@npm:^5.0.1":
+"json-rpc-middleware-stream@npm:^5.0.1":
   version: 5.0.1
   resolution: "json-rpc-middleware-stream@npm:5.0.1"
   dependencies:
@@ -9537,7 +9365,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0, punycode@npm:^2.1.1, punycode@npm:^2.3.0":
+"punycode@npm:^2.1.0, punycode@npm:^2.3.0":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: bb0a0ceedca4c3c57a9b981b90601579058903c62be23c5e8e843d2c2d4148a3ecf029d5133486fb0e1822b098ba8bba09e89d6b21742d02fa26bda6441a6fb2
@@ -9564,13 +9392,6 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
-  languageName: node
-  linkType: hard
-
-"queue-tick@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "queue-tick@npm:1.0.1"
-  checksum: 57c3292814b297f87f792fbeb99ce982813e4e54d7a8bdff65cf53d5c084113913289d4a48ec8bbc964927a74b847554f9f4579df43c969a6c8e0f026457ad01
   languageName: node
   linkType: hard
 
@@ -9738,17 +9559,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:3.6.2, readable-stream@npm:^3.0.2, readable-stream@npm:^3.4.0, readable-stream@npm:^3.5.0, readable-stream@npm:^3.6.0, readable-stream@npm:^3.6.2":
-  version: 3.6.2
-  resolution: "readable-stream@npm:3.6.2"
-  dependencies:
-    inherits: ^2.0.3
-    string_decoder: ^1.1.1
-    util-deprecate: ^1.0.1
-  checksum: bdcbe6c22e846b6af075e32cf8f4751c2576238c5043169a1c221c92ee2878458a816a4ea33f4c67623c0b6827c8a400409bfb3cf0bf3381392d0b1dfb52ac8d
-  languageName: node
-  linkType: hard
-
 "readable-stream@npm:^2.0.2, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.3, readable-stream@npm:~2.3.6":
   version: 2.3.8
   resolution: "readable-stream@npm:2.3.8"
@@ -9764,6 +9574,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"readable-stream@npm:^3.4.0, readable-stream@npm:^3.5.0, readable-stream@npm:^3.6.0, readable-stream@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "readable-stream@npm:3.6.2"
+  dependencies:
+    inherits: ^2.0.3
+    string_decoder: ^1.1.1
+    util-deprecate: ^1.0.1
+  checksum: bdcbe6c22e846b6af075e32cf8f4751c2576238c5043169a1c221c92ee2878458a816a4ea33f4c67623c0b6827c8a400409bfb3cf0bf3381392d0b1dfb52ac8d
+  languageName: node
+  linkType: hard
+
 "readable-stream@npm:^3.6.2 || ^4.4.2":
   version: 4.5.2
   resolution: "readable-stream@npm:4.5.2"
@@ -9774,15 +9595,6 @@ __metadata:
     process: ^0.11.10
     string_decoder: ^1.3.0
   checksum: c4030ccff010b83e4f33289c535f7830190773e274b3fcb6e2541475070bdfd69c98001c3b0cb78763fc00c8b62f514d96c2b10a8bd35d5ce45203a25fa1d33a
-  languageName: node
-  linkType: hard
-
-"readable-web-to-node-stream@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "readable-web-to-node-stream@npm:3.0.2"
-  dependencies:
-    readable-stream: ^3.6.0
-  checksum: 8c56cc62c68513425ddfa721954875b382768f83fa20e6b31e365ee00cbe7a3d6296f66f7f1107b16cd3416d33aa9f1680475376400d62a081a88f81f0ea7f9c
   languageName: node
   linkType: hard
 
@@ -9802,7 +9614,7 @@ __metadata:
     "@lavamoat/allow-scripts": ^2.0.3
     "@metamask/auto-changelog": ^3.3.0
     "@metamask/eslint-config-typescript": ^12.1.0
-    "@metamask/keyring-api": ^1.0.0-rc.1
+    "@metamask/keyring-api": ^3.0.0
     "@metamask/snaps-cli": ^3.0.0
     "@metamask/snaps-types": ^3.0.0
     "@metamask/utils": ^8.1.0
@@ -10091,7 +9903,6 @@ __metadata:
   dependencies:
     "@lavamoat/allow-scripts": ^3.0.0
     "@lavamoat/preinstall-always-fail": ^2.0.0
-    "@metamask/providers": ^14.0.2
     "@typescript-eslint/eslint-plugin": ^5.55.0
     "@typescript-eslint/parser": ^5.55.0
     depcheck: ^1.4.6
@@ -10404,7 +10215,7 @@ __metadata:
   dependencies:
     "@headlessui/react": ^1.7.18
     "@metamask/keyring-api": ^3.0.0
-    "@metamask/providers": ^13.0.0
+    "@metamask/providers": ^14.0.2
     "@tanstack/react-query": ^5.17.10
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
@@ -10622,16 +10433,6 @@ __metadata:
     inherits: ^2.0.1
     readable-stream: ^2.0.2
   checksum: 7bb3563961450e69183baa04272e042bdd7df44f6d75bf1cce0d6a628efd2d4b0a0d2a290bed0674ea7719c87e6cf6bf7406ca1d17413abf1484430d36d65580
-  languageName: node
-  linkType: hard
-
-"streamx@npm:^2.15.0":
-  version: 2.15.7
-  resolution: "streamx@npm:2.15.7"
-  dependencies:
-    fast-fifo: ^1.1.0
-    queue-tick: ^1.0.1
-  checksum: 5ad414e3602cb47c911712523585c5d918900b393051fbde8e294e21c22ea44b88a52b2196319a239c616fa5e324f70b6be30d6a53182a718613d4ed594f1a44
   languageName: node
   linkType: hard
 
@@ -10923,17 +10724,6 @@ __metadata:
   version: 2.2.1
   resolution: "tapable@npm:2.2.1"
   checksum: 3b7a1b4d86fa940aad46d9e73d1e8739335efd4c48322cb37d073eb6f80f5281889bf0320c6d8ffcfa1a0dd5bfdbd0f9d037e252ef972aca595330538aac4d51
-  languageName: node
-  linkType: hard
-
-"tar-stream@npm:^3.1.6":
-  version: 3.1.7
-  resolution: "tar-stream@npm:3.1.7"
-  dependencies:
-    b4a: ^1.6.4
-    fast-fifo: ^1.2.0
-    streamx: ^2.15.0
-  checksum: 6393a6c19082b17b8dcc8e7fd349352bb29b4b8bfe1075912b91b01743ba6bb4298f5ff0b499a3bbaf82121830e96a1a59d4f21a43c0df339e54b01789cb8cc6
   languageName: node
   linkType: hard
 

@@ -41,7 +41,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@metamask/keyring-api": "^1.0.0-rc.1",
+    "@metamask/keyring-api": "^3.0.0",
     "@metamask/snaps-types": "^3.0.0",
     "@metamask/utils": "^8.1.0",
     "uuid": "^9.0.0",
