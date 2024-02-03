@@ -1,6 +1,6 @@
 {
   "name": "readonly-snap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ReadOnly Account Snap for MetaMask",
   "keywords": [
     "metamask",

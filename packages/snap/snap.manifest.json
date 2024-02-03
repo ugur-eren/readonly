@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "snAAps Account Abstraction keyring snap",
   "proposedName": "snAAps",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "https://github.com/ugur-eren/readonly.git"
   },
   "source": {
-    "shasum": "boiGlD1k/2kC4cfmT4x8C1KSnuaJBejUya4cFGzs9lc=",
+    "shasum": "unzSBrB4mU8De/tcqEH9AhtaiDpPF2TsO5vugpwbZQw=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
