@@ -78,6 +78,12 @@ export const Landing: React.FC = () => {
             <div className="mt-10 w-full">
               <h1 className="mb-2 text-xl">Your Accounts</h1>
 
+              {Object.keys(snapAccounts).length === 0 ? (
+                <p className="text-sm text-neutral-300">
+                  You don't have any accounts yet. Add an account to get started.
+                </p>
+              ) : null}
+
               {Object.values(snapAccounts).map((account) => (
                 <AccountCard account={account} />
               ))}
