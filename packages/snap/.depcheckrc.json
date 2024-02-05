@@ -1,3 +1,9 @@
 {
-  "ignores": ["@lavamoat/allow-scripts"]
+  "ignores": [
+    "@lavamoat/allow-scripts",
+    "@metamask/eslint-config-typescript",
+    "dotenv",
+    "semantic-release"
+  ],
+  "ignoreDirs": [".eslintrc"]
 }

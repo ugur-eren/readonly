@@ -1,0 +1,56 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+    paths: [packages/snap/**]
+  pull_request:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+
+      - name: Cache
+        uses: actions/cache@v3.0.2
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install Dependencies
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn run lint
+        working-directory: packages/snap
+
+      - name: Build
+        run: yarn build
+        working-directory: packages/snap
+
+      - name: Update to next version
+        if: ${{ github.ref == 'refs/heads/main' }}
+        id: next-version
+        run: |
+          NEXT_VERSION=$(yarn semantic-release --no-ci --dryRun | grep -oP 'next release version is \K[0-9]+\.[0-9]+\.[0-9]+')
+          yarn version $NEXT_VERSION
+          yarn mm-snap manifest --fix
+        working-directory: packages/snap
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: yarn semantic-release
+        working-directory: packages/snap
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

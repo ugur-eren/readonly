@@ -9,7 +9,6 @@ import {
   type SubmitRequestResponse,
 } from '@metamask/keyring-api';
 import {type Json} from '@metamask/utils';
-import type {SnapsGlobalObject} from '@metamask/snaps-types';
 
 import {saveState, type State} from './state';
 import {throwError} from './utils/helpers';
@@ -43,7 +42,7 @@ export class SimpleKeyring implements Keyring {
   }
 
   async #emitEvent(event: KeyringEvent, data: Record<string, Json>): Promise<void> {
-    await emitSnapKeyringEvent(snap as SnapsGlobalObject, event, data);
+    await emitSnapKeyringEvent(snap, event, data);
   }
 
   async listAccounts(): Promise<KeyringAccount[]> {

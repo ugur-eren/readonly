@@ -22,13 +22,16 @@
     "lint:check": "yarn workspaces foreach --parallel --verbose run lint:check",
     "format": "yarn workspaces foreach --parallel --verbose run format",
     "format:check": "yarn workspaces foreach --parallel --verbose run format:check",
-    "check": "yarn workspaces foreach --parallel --verbose run check"
+    "check": "yarn workspaces foreach --parallel --verbose run check",
+    "commit": "cz"
   },
   "devDependencies": {
     "@lavamoat/allow-scripts": "^3.0.0",
     "@lavamoat/preinstall-always-fail": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "depcheck": "^1.4.6",
     "dotenv": "^16.3.1",
     "dotenv-cli": "^7.3.0",
@@ -53,6 +56,11 @@
   "lavamoat": {
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }

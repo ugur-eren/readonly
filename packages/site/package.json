@@ -13,7 +13,7 @@
     "format:check": "prettier -c \"src/**/*.ts\"",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint:check": "eslint \"src/**/*.{ts,tsx}\"",
-    "lint": "yarn lint:ts:check --fix",
+    "lint": "yarn lint:check --fix",
     "ts:check": "tsc --noEmit",
     "check": "yarn format && yarn format:check && yarn lint:check && yarn ts:check"
   },
